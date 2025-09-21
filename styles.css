@@ -1,0 +1,24 @@
+:root{
+  --bg:#f7fafc; --card:#ffffff; --accent:#2563eb; --muted:#6b7280;
+  --radius:12px; --pad:18px;
+}
+*{box-sizing:border-box}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  margin:0; background:var(--bg); color:#111; line-height:1.5;
+}
+.site-header{
+  background:linear-gradient(90deg,var(--accent),#7dd3fc);
+  color:white; padding:36px; text-align:center; border-bottom-left-radius:24px; border-bottom-right-radius:24px;
+}
+.container{max-width:900px;margin:28px auto;padding:16px;}
+section{background:var(--card);border-radius:var(--radius);padding:var(--pad);margin-bottom:18px;box-shadow:0 6px 18px rgba(10,10,10,0.06)}
+h1,h2{margin:0 0 8px 0}
+.tagline{opacity:0.95}
+#contactForm input,#contactForm textarea{
+  width:100%;padding:10px;margin:8px 0;border:1px solid #e6e9ef;border-radius:8px;font-size:15px;
+}
+#contactForm button{
+  background:var(--accent); color:white; border:0;padding:10px 16px;border-radius:10px;font-weight:600;cursor:pointer;
+}
+.site-footer{text-align:center;padding:18px;color:var(--muted)}
